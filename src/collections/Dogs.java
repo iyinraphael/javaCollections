@@ -11,11 +11,11 @@ public class Dogs
 	{
 		this.breed = breed;
 		this.avgWeight = avgWeight;
-		this.apartment  apartment;
+		this.apartment = apartment;
 	}
 //Mark: - getters and setters (behaviors)
-	public String getBreed {
-		return breed
+	public String getBreed() {
+		return breed;
 	}
 
 	public void setBreed(String breed)
@@ -30,7 +30,7 @@ public class Dogs
 
 	public void setAvgWeight(int avgWeight)
 	{
-		this.avgWeight = avgWeight
+		this.avgWeight = avgWeight;
 
 	}
 
@@ -41,13 +41,13 @@ public class Dogs
 
 	public void setApartment(boolean apartment)
 	{
-		this.apartment = apartment
+		this.apartment = apartment;
 	}
 
 	@Override public String toString() {
-		String rtnStr = "breed" + " " + breed + "\n" +
-						"avgWeight" + " " + avgWeight + "\n" +
-						"apartment" + " " + apartment + "\n"; 
+		String rtnStr = "breed =" + " " + breed + ", "+
+						"avgWeight =" + " " + avgWeight + ", " +
+						"apartment =" + " " + apartment + "\n"; 
 		return rtnStr;
 	}
 
